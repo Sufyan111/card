@@ -1,3 +1,26 @@
-Card{
-    background-color: blue;
+#infor{
+    background-color: rgba(170, 101, 226, 0.603);
 }
+
+#inforAcc{
+    background-color: black;
+    color: white;
+}
+
+#idcard{
+    background-color:skyblue;
+}
+
+#idcardAcc{
+    background-color: black;
+    color: white;
+}
+
+#imagep{
+    border-radius: 10px;
+}
+
+#cardcol{
+    text-align: center;
+}
+
