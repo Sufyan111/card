@@ -1,0 +1,29 @@
+div{
+    text-align: center;
+}
+
+.card{
+   
+}
+
+
+Button{
+    height: 500px;
+    background-color: white !important;
+    color: black !important;
+    font-weight: bolder !important;
+    padding: 10px;
+    margin: 6px !important;
+    box-shadow:0 0 10px black;
+    width: 65px;
+    }
+
+Button:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+Button:active {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
