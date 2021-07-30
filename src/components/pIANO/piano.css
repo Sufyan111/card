@@ -1,13 +1,8 @@
-div{
+#pianodiv{
     text-align: center;
 }
 
-.card{
-   
-}
-
-
-Button{
+#piano{
     height: 500px;
     background-color: white !important;
     color: black !important;
@@ -15,15 +10,16 @@ Button{
     padding: 10px;
     margin: 6px !important;
     box-shadow:0 0 10px black;
-    width: 65px;
+    width: 55px;
     }
 
-Button:hover {
+#piano:hover {
     background-color: black !important;
     color: white !important;
 }
 
-Button:active {
-    transform: scale(0.9);
-    transition: 0.5s;
+#piano:active {
+    transform: scale(0.95);
+    transition: 0.3s;
+    box-shadow: 0 0 25px red !important;
 }
