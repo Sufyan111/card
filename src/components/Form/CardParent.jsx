@@ -4,7 +4,7 @@ import { CardReducer } from "../reducers/CardReducer";
 
 export const CardParent = () => {
   return (
-    <div className="trending-card-container">
+    // <div className="trending-card-container">
       <div id="card-container">
         <div className="row">
           {CardReducer.Data.map((item) => (
@@ -12,7 +12,7 @@ export const CardParent = () => {
           ))}
         </div>
       </div>
-    </div>
+    // </div>
   );
 
 };
