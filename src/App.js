@@ -1,8 +1,8 @@
-import {Compo} from './components/Redux/Compo'
+import {EmpCard} from './components/Redux/EmpCard'
 function App() {
   return (
     <div>
-      <Compo />
+      <EmpCard />
     </div>
   );
 }
