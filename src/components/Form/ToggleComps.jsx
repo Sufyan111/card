@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 
 export const ToggleComps = () => {
-  const [clor, setClor] = useState("black");
+  const [clor, setClor] = useState("black");      
 
   return (
     <div>

@@ -1,8 +1,8 @@
-import {Counter} from './components/Form/Counter'
+import {Compo} from './components/Redux/Compo'
 function App() {
   return (
     <div>
-      <Counter />
+      <Compo />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Button, Form, Card } from "react-bootstrap";
@@ -10,20 +10,28 @@ export const Login = () => {
   const [password, setPassword] = useState("");
   const [isValid, setIsValid] = useState(true);
   const [isSuccess, setIsSuccess] = useState(false);
+  const eleUsername = useRef();
+  const elePassword = useRef();
 
   useEffect(() => {
     if (userName.length >= 5 && password.length >= 6) {
       setIsValid(false);
-
       if (
-        userdata.Username == userName.trim() &&
+        userdata.Username === userName.trim() &&
         userdata.password === password.trim()
       ) {
         setIsSuccess(true);
       }
     } else setIsValid(true);
   }, [userName, password]);
-
+  useEffect(() => {
+    if (localStorage.getItem("userName")) {
+      eleUsername.current.value = localStorage.getItem("userName");
+      elePassword.current.value = localStorage.getItem("password");
+    } else {
+      eleUsername.current.focus();
+    }
+  });
   return (
     <div>
       {isSuccess ? (
@@ -35,11 +43,13 @@ export const Login = () => {
               type="text"
               placeholder="UserName"
               onChange={(e) => setUsername(e.target.value)}
+              ref={eleUsername}
             />
             <Form.Control
               type="password"
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
+              ref={elePassword}
             />
 
             <Button className="logbutton" disabled={isValid}>

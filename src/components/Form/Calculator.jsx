@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useMemo } from "react";
 import { useState } from "react";
 import { Card, Form, Button, Row, Col } from "react-bootstrap";
 import "./CalCulator.css";
@@ -7,13 +7,20 @@ export const Calculator = () => {
   const [p, setP] = useState(0);
   const [n, setN] = useState(0);
   const [r, setR] = useState(0);
-  const [emi, setEmi] = useState(0);
+  // const [emi, setEmi] = useState(0);
+
   const handleCalEmi = () => {
     const si = (p * n * r) / 100;
     const repayAmount = Number(p) + Number(si);
     const emilocal = repayAmount / (n * 12);
-    setEmi(emilocal);
+    return emilocal;
   };
+
+  const emi = useMemo(() => handleCalEmi(), [p, n, r]);
+  // useEffect(() => {
+  //   handleCalEmi();
+  // }, [p, n.r]);
+
   return (
     <div>
       <h1>EMI Calculator</h1>
