@@ -1,8 +1,8 @@
-import {EmpCard} from './components/Redux/EmpCard'
+import {Home } from './components/Home'
 function App() {
   return (
     <div>
-      <EmpCard />
+        <Home />
     </div>
   );
 }

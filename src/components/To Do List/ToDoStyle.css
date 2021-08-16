@@ -1,0 +1,22 @@
+.home{
+    background-color: #4C4C6D !important;
+    margin: 15px;
+    padding: 15px;
+}
+
+.todolist{
+    background-color: #B8DFD8 !important ;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 0 10px #FF6701;
+     
+}
+
+.addtodo{
+    background-color: #B8DFD8 !important ;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 0 10px #064420;
+    
+
+}

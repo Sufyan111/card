@@ -9,7 +9,7 @@ const initialState={
         {
             
             name: "Syed Farhan",
-            age: "25",
+            age: "65",
             desc: "Frontend developer"
         },
         {
