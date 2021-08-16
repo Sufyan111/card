@@ -1,7 +1,10 @@
 import React from 'react';
+import {Card} from 'react-bootstrap'
 
 export const ToDoItem = ()=>{
     return(
-        <React.Fragment></React.Fragment>
+        <Card className='todoitem'>
+            <p>Hello</p>
+        </Card>
     )
 }

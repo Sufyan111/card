@@ -12,11 +12,16 @@
      
 }
 
+
 .addtodo{
     background-color: #B8DFD8 !important ;
     margin: 15px;
     padding: 15px;
     box-shadow: 0 0 10px #064420;
-    
-
 }
+
+.todoitem{
+    background-color: #E8F6EF !important;
+    margin: 10px;
+}
+
