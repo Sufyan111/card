@@ -2,17 +2,16 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { ToDoItem } from './ToDoItem';
 
-export const ToDoList = ()=>{
+export const ToDoList = ( {todoitems} )=>{
     return(
-        <React.Fragment>
             <Card className='todolist'>
             <Card.Title>
               To Do List
           </Card.Title>
-          <ToDoItem />
-          <ToDoItem />
+         {todoitems.map((item)=>(
+             <ToDoItem item={item} />
+         ))}
 
             </Card>
-        </React.Fragment>
     )
 }
