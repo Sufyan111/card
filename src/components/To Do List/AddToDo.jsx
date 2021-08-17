@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Form, Button, Row, Col } from "react-bootstrap";
+import { Card, Form, Button, Row, Col, CardImg } from "react-bootstrap";
 
 export const AddToDo = ({ handleAdd }) => {
   const [newTodo, setNewTodo] = useState("");
@@ -7,6 +7,7 @@ export const AddToDo = ({ handleAdd }) => {
   return (
     <Card className="addtodo">
       <Card.Title>Add To Do</Card.Title>
+      <Card.Img variant="top" src="./images/addTodo.jpg" className="addimg"/>
       <Row>
         <Col md={9}>
           <Form.Control
