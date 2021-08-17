@@ -12,7 +12,6 @@ export const ToDoList = ( {todoitems, handleDel} )=>{
          {todoitems.map((item)=>(
              <ToDoItem item={item} handleDel={handleDel}/>
          ))}
-
             </Card>
     )
 }

@@ -2,7 +2,7 @@
     /* background-color: #4C4C6D !important; */
     margin: 15px;
     padding: 15px;
-    background-image: linear-gradient(45deg,black, red, black );
+    background-image: linear-gradient(45deg, black, red, black);
 }
 
 .todolist {
@@ -28,26 +28,45 @@
 .todoitem {
     background-color: rgb(136, 24, 24) !important;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px !important;
     box-shadow: 0 1px 5px black;
+    transition: 0.2s;
+}
+
+.todoitem:hover {
+    box-shadow: 0 3px 5px black;
+    transform: scale(1.002);
 
 }
 
-.cardtitle{
+.cardtitle {
     color: black;
     text-align: center;
 }
 
 
-.listimg{
-    width:250px;
+.listimg {
+    width: 250px;
     height: 300px;
     margin: 15px;
 }
 
-.addimg{
-    /* width: 280px;
-    height: 280px; */
-    margin: 15px !important;
+.addimg {
+    margin: 15px 0px 15px !important;
+}
+
+.delbtn {
+    display: none !important;
+
+}
+
+
+.todoitem:hover .delbtn {
+    display: block !important;
+}
+
+.delicon{
+    width: 18px;
+    height: 18px;
 }

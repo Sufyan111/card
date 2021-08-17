@@ -13,14 +13,14 @@ export const ToDoItem = ({ item, handleDel }) => {
         </Col>
         <Col md={8}>
           <Form.Label className="label">
-            {check ? <del>{item}</del> :  item }
+            {check ? <del>{item}</del> : item}
           </Form.Label>
         </Col>
         <Col md={2}>
-          <Button onClick={()=>handleDel(item)}>Delete</Button>
+          <Button onClick={() => handleDel(item)} className="delbtn">
+            <img src="./images/delete.png" alt="" className="delicon" />
+          </Button>
         </Col>
-
-      
       </Row>
     </Card>
   );
