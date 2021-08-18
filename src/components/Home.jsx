@@ -6,18 +6,14 @@ import "./To Do List/ToDoStyle.css";
 import { useState } from "react";
 
 export const Home = () => {
-  const [todoitems, setTodoitems] = useState([
-    "Learning React",
-    "Make To Do List",
-    "Kya karre so usku samjhna",
-  ]);
+  const [todoitems, setTodoitems] = useState(["Add new item","Add new item","Add new item","Add new item","Add new item"]);
 
   const handleAdd = (newTodo) => {
     setTodoitems([...todoitems, newTodo]);
   };
 
+
   const handleDel = (curritem) => {
-    console.log(curritem);
     const filtered = todoitems.filter((item) => item !== curritem);
     setTodoitems([...filtered]);
   };
@@ -26,10 +22,10 @@ export const Home = () => {
       <Card className="home">
         <Row>
           <Col>
-            <AddToDo handleAdd={handleAdd} />
+            <AddToDo handleAdd={handleAdd}/>
           </Col>
           <Col>
-            <ToDoList todoitems={todoitems} handleDel={handleDel} />
+            <ToDoList todoitems={todoitems} handleDel={handleDel}/>
           </Col>
         </Row>
       </Card>
