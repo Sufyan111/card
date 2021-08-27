@@ -1,8 +1,10 @@
-import {Home } from './components/Home'
+// import {Home } from './components/Home'
+import {DynamicComp} from "./components/Dynamic Component from Obj/DynamicComp.jsx"
 function App() {
   return (
     <div>
-        <Home />
+        {/* <Home /> */}
+        <DynamicComp />
     </div>
   );
 }

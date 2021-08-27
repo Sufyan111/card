@@ -1,0 +1,16 @@
+.divcard{
+    display: flex !important;
+    justify-content:start ;
+    align-items: center;
+}
+
+.card{
+    width: 18rem;
+    display: flexbox;
+    justify-content: center ;
+    align-items: center;
+    background-color: blanchedalmond;
+    box-shadow: 0 2px 10px black;
+    margin: 15px;
+    padding: 8px;
+}
